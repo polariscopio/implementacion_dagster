@@ -1,0 +1,49 @@
+[project]
+name = "rsystem"
+version = "0.1.0"
+description = "prueba dagster"
+authors = [
+    {name = "pol"}
+]
+requires-python = ">=3.9,<3.11"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+numpy = "<2.1.0"
+mlflow = "^2.17.2"
+dagster = "^1.9.1"
+dagster-mlflow = "^0.25.1"
+tensorflow-io-gcs-filesystem = { version = "0.23.1"}
+# tensorflow = "^2.18.0"
+tensorflow = "^2.18.0"
+dagster-airbyte = "^0.25.10"
+dagster-dbt = "^0.25.10"
+dagster-webserver = "^1.9.10"
+requests = "^2.32.3"
+pandas = "^2.2.3"
+
+#[tool.dagster]
+#module_name = "rsystem.definitions"
+#project_name = "rsystem"
+dbt-postgres = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+extend = "../../pyproject.toml"
+
+[tool.ruff.lint]
+extend-ignore = [
+
+  # (Unused import): We stub some files with just imports to help people get started
+  "F401",    
+  # (Import block is un-sorted or un-formatted): It's more important that we introduce the imports in the order they're used rather than alphabetically.
+  "I001",
+
+  # (relative imports): relative imports are acceptable in examples & docs
+  "TID252"
+
+]

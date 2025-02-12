@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/pablo/rsystem/dagster_university/mlruns/0/36557ebfb7d5478db29dab6977085de8/artifacts
+end_time: 1738088005200
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 36557ebfb7d5478db29dab6977085de8
+run_name: __ASSET_JOB
+run_uuid: 36557ebfb7d5478db29dab6977085de8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738088003857
+status: 3
+tags: []
+user_id: pablo
