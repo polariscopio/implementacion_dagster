@@ -2,7 +2,7 @@
 
 Tener corriendo mlflow y airbyte (ver repositorio anterior)  
 
-
+https://github.com/polariscopio/implementacion_airbyte_dbt
 
 
 # Configuración del Entorno
