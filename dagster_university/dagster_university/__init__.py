@@ -56,18 +56,7 @@ airbyte_assets = load_assets_from_airbyte_instance(
 
 
 #configs
-'''
-training_config = {
-    'keras_dot_product_model': {
-        'config': {
-            'batch_size': 128,
-            'epochs': 10,
-            'learning_rate': 1e-3,
-            'embeddings_dim': 5
-        }
-    }
-}
-'''
+
 mlflow_resources = {
     "experiment_name": "recommender_system_3",
     "mlflow_tracking_uri": "http://localhost:5000",
@@ -97,26 +86,6 @@ keras_job = define_asset_job(
 
 
 
-'''
-job_training_config = {
-    'resources': {
-        **mlflow_resources
-    },
-    'ops': {
-        **training_config
-    }
-}
-
-job_all_config = {
-    'resources': {
-        **mlflow_resources
-    },
-    'ops': {
-        **training_config
-    }
-}
-'''
-#jobs
 
 
 @resource
